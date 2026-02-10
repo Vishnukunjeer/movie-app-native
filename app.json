@@ -2,9 +2,10 @@
   "expo": {
     "name": "movieFlix",
     "slug": "movie-app",
+    
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/logo.png",
+    "icon": "./assets/icons/movie_icon.png",
     "scheme": "movieapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,11 +14,18 @@
     },
     "android": {
       "adaptiveIcon": {
+        "package": "com.jsm_rn_movie_app",
         "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "usesCleartextTraffic": true
+      "usesCleartextTraffic": true,
+      "package": "com.vishnukunjeer.movieapp"
+    },
+     "splash": {
+      "image": "./assets/icons/movie_icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F0D23"
     },
     "web": {
       "bundler": "metro",
@@ -38,6 +46,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "8fe04a61-1519-4438-8bc8-b2d2b955680f"
+      }
     }
   }
 }
